@@ -3,7 +3,7 @@
 Fine-tuned `unsloth/Qwen3-8B-unsloth-bnb-4bit` (299k dl) on `VineshF1/F1-Dataset` 10656 QA.
 
 ## Model
-🤗 **HF:** → https://huggingface.co/Vinesh/EauRouge-F1-Qwen3-8B-v2
+🤗 **HF:** → https://huggingface.co/Vinesh89/EauRouge-F1-Qwen3-8B
 
 Dataset: https://github.com/VineshF1/F1-Dataset `10656` pairs `5745 race_result · 2039 qual · 1748 driver_bio · 364 champion · 239 career_total · 177 circuit`
 
