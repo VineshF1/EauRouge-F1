@@ -1,0 +1,10 @@
+outputs/
+lora_model/
+merged/
+*.safetensors
+*.bin
+*.pt
+*.onnx
+wandb/
+__pycache__/
+.ipynb_checkpoints/
