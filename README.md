@@ -1,6 +1,6 @@
 # EauRouge-F1
 
-LoRA fine-tune of `Qwen3-8B` on 10,656 Formula 1 question/answer pairs. It answers short
+QLoRA fine-tune of `Qwen3-8B` on 10,656 Formula 1 question/answer pairs. It answers short
 factual questions about race results, qualifying, circuits and championship totals.
 
 **Adapter:** https://huggingface.co/VineshF1/EauRouge-F1-Qwen3-8B
