@@ -10,14 +10,14 @@ The split is computed from data/final/qa.jsonl alone (seed 42), so the same
 is printed and written into the CSV so you can prove before/after used the
 same rows.
 
-Colab (before):
-  !wget -q https://raw.githubusercontent.com/VineshF1/F1-Dataset/main/data/final/qa.jsonl -O /content/qa.jsonl
+Kaggle (before, published adapter):
+  !wget -q https://raw.githubusercontent.com/VineshF1/F1-Dataset/main/data/final/qa.jsonl -O /kaggle/working/qa.jsonl
   !python eval_adapter.py --model VineshF1/EauRouge-F1-Qwen3-8B \
-      --qa /content/qa.jsonl --out /content/drive/MyDrive/EauRouge-F1/eval_before.csv
+      --qa /kaggle/working/qa.jsonl --out /kaggle/working/eval_before.csv
 
-Colab (after):
-  !python eval_adapter.py --model /content/drive/MyDrive/EauRouge-F1/qwen3-8b-lora-v2 \
-      --qa /content/qa.jsonl --out /content/drive/MyDrive/EauRouge-F1/eval_after.csv
+Kaggle (after, local adapter folder):
+  !python eval_adapter.py --model /kaggle/working/qwen3-8b-lora \
+      --qa /kaggle/working/qa.jsonl --out /kaggle/working/eval_after.csv
 
 Local data-only self check (no GPU, no model):
   python eval_adapter.py --dry-run --qa data/final/qa.jsonl
