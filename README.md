@@ -31,12 +31,14 @@ questions generated from `champions.json`.
 
 Unsloth QLoRA, r=32, 4-bit NF4, 1024 tokens, packed, batch 4x2, lr 2e-4 cosine, 3 epochs
 (216 steps) on a free Kaggle T4. Loss on the answer tokens only. Eval loss flattened at 0.70
-by step 100, so 2 epochs would give the same result.
+by step 100 while train loss kept falling from 1.06 to 0.63 - the extra epochs memorised, so
+2 epochs would give the same result.
 
 ## Files
 
 - `Train.ipynb` - Kaggle notebook: trains, evaluates, pushes the adapter to the Hub
 - `eval_adapter.py` - evaluation used for every number above
+- `results/` - both eval CSVs and `run_summary.json` from the run above
 
 ## Run the eval
 
@@ -56,3 +58,5 @@ unreliable. F1 only, English only, data frozen at the 2025 season.
 ## Author
 
 **Vinesh**
+
+Built with ❤️
